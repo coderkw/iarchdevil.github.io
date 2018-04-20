@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Web, Life" />
+  <meta name="keywords" content="Hexo,GitHub Pages," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="kwing踩坑记">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="简单地将这个过程分为 3 步骤:  在 GitHub 上配置 GitHub Pages 本地使用 Hexo 搭建自己的博客  将 Hexo 上传至 GitHub  配置 GitHub Pages在 GitHub 上配置 GitHub Pages 很简单，进入 自己同名 的 Repositories 中点击设置 Setting，下拉找到 GitHub Pages 设置 Choose a theme">
+<meta name="keywords" content="Hexo,GitHub Pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Hexo 和 GitHub 搭建自己的 Blog">
+<meta property="og:url" content="http://yoursite.com/2018/04/20/使用Hexo和GitHub搭建自己的Blog/index.html">
 <meta property="og:site_name" content="kwing踩坑记">
+<meta property="og:description" content="简单地将这个过程分为 3 步骤:  在 GitHub 上配置 GitHub Pages 本地使用 Hexo 搭建自己的博客  将 Hexo 上传至 GitHub  配置 GitHub Pages在 GitHub 上配置 GitHub Pages 很简单，进入 自己同名 的 Repositories 中点击设置 Setting，下拉找到 GitHub Pages 设置 Choose a theme">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-20T09:28:23.157Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kwing踩坑记">
+<meta name="twitter:title" content="使用 Hexo 和 GitHub 搭建自己的 Blog">
+<meta name="twitter:description" content="简单地将这个过程分为 3 步骤:  在 GitHub 上配置 GitHub Pages 本地使用 Hexo 搭建自己的博客  将 Hexo 上传至 GitHub  配置 GitHub Pages在 GitHub 上配置 GitHub Pages 很简单，进入 自己同名 的 Repositories 中点击设置 Setting，下拉找到 GitHub Pages 设置 Choose a theme">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/20/使用Hexo和GitHub搭建自己的Blog/"/>
 
 
 
 
 
-  <title>kwing踩坑记</title>
+  <title>使用 Hexo 和 GitHub 搭建自己的 Blog | kwing踩坑记</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,9 +278,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -306,9 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/20/使用Hexo和GitHub搭建自己的Blog/" itemprop="url">使用 Hexo 和 GitHub 搭建自己的 Blog</a></h1>
+          <h1 class="post-title" itemprop="name headline">使用 Hexo 和 GitHub 搭建自己的 Blog</h1>
         
 
         <div class="post-meta">
@@ -380,9 +382,7 @@
       
 
       
-        
-          
-            <p><strong>简单地将这个过程分为 3 步骤:</strong></p>
+        <p><strong>简单地将这个过程分为 3 步骤:</strong></p>
 <ol>
 <li>在 <code>GitHub</code> 上配置 <code>GitHub Pages</code></li>
 <li>本地使用 <code>Hexo</code> 搭建自己的博客 </li>
@@ -395,8 +395,6 @@
 <p>还需要再安装一个 <code>hexo-deployer-git</code> 插件把代码上传至 <code>GitHub</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save //安装并保存插件依赖</span><br><span class="line"></span><br><span class="line">hexo clean //清除缓存 网页正常时可以不用这条命令</span><br><span class="line"></span><br><span class="line">hexo generator //生成静态页面到 public 目录，有点类似打包的感觉</span><br><span class="line"></span><br><span class="line">hexo deploy //将 .deploy 目录部署到 GitHub</span><br></pre></td></tr></table></figure></p>
 <p>部署成功后会显示：INFO Deploy done: git<br>访问这个网址 <strong><code>https://&quot;你的GitHub用户名&quot;.github.io/</code></strong> 是和你本地的同步了。</p>
 
-          
-        
       
     </div>
     
@@ -411,14 +409,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -428,10 +434,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -439,6 +446,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -459,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -524,6 +544,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-GitHub-Pages"><span class="nav-number">1.</span> <span class="nav-text">配置 GitHub Pages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地使用-Hexo-搭建自己的博客"><span class="nav-number">2.</span> <span class="nav-text">本地使用 Hexo 搭建自己的博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将-Hexo-上传至-GitHub"><span class="nav-number">3.</span> <span class="nav-text">将 Hexo 上传至 GitHub</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -657,6 +693,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
